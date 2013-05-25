@@ -1,6 +1,6 @@
 # NAME
 
-self\_limit - 自己規制プラグイン for mikutter
+self\_limit - 自主規制プラグイン for mikutter
 
 # DESCRIPTION
 
@@ -25,7 +25,7 @@ Twitterに夢中になりすぎないようにするための「目安」とし�
 
 # CONFIGURATION
 
-起動した後に設定画面を開いて「自己規制」から各種設定ができます
+起動した後に設定画面を開いて「自主規制」から各種設定ができます
 
 
 # ISSUES

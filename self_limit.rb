@@ -27,7 +27,7 @@ Plugin.create(:self_limit) do
         end
 
         if @limit[:limit_now]
-            Plugin.activity :system, "自己規制中だよっ☆\n規制解除まであと" + diff.to_s + "秒"
+            Plugin.activity :system, "自主規制中だよっ☆\n規制解除まであと" + diff.to_s + "秒"
             clear_post(gui_postbox)
             Plugin.filter_cancel!
         else
@@ -39,14 +39,14 @@ Plugin.create(:self_limit) do
                 @limit[:end_time] = Time.now.to_i + UserConfig[:self_limit_limit_time].to_i
 
                 Reserver.new(UserConfig[:self_limit_limit_time].to_i){
-                    Plugin.activity :system, "自己規制中が解除されたよっ"
+                    Plugin.activity :system, "自主規制中が解除されたよっ"
                 }
 
-                Plugin.activity :system, "今から" + UserConfig[:self_limit_limit_time].to_s + "秒の間、自己規制はいりまーす"
+                Plugin.activity :system, "今から" + UserConfig[:self_limit_limit_time].to_s + "秒の間、自主規制はいりまーす"
             else
                 notify_count = UserConfig[:self_limit_limit_count].to_i - @limit[:count] 
                 if notify_count == UserConfig[:self_limit_before_notify].to_i
-                    Plugin.activity :system, "あと" + notify_count.to_s + "ツイートで自己規制に入るよー"
+                    Plugin.activity :system, "あと" + notify_count.to_s + "ツイートで自主規制に入るよー"
                 end
             end
         end
@@ -60,13 +60,13 @@ Plugin.create(:self_limit) do
         Plugin.create(:gtk).widgetof(gui_postbox).widget_post.buffer.text = ''
     end
 
-    settings "自己規制" do
-        settings "自己規制" do
+    settings "自主規制" do
+        settings "自主規制" do
             adjustment("規制ツイート数", :self_limit_limit_count, 0, 10000).
                 tooltip "何ツイートで規制に入るかを設定します"
             adjustment("規制の何ツイート前に事前通知をするか", :self_limit_before_notify, 0, 10000).
                 tooltip "(規定ツイート数 - この設定値)が現在のツイートカウント数と同じになったら通知の事前告知をします "
-            adjustment("自己規制の持続時間(秒)", :self_limit_limit_time, 0, 24*60*60)
+            adjustment("自主規制の持続時間(秒)", :self_limit_limit_time, 0, 24*60*60)
         end
         closeup summary = ::Gtk::Label.new(
             "\n\n" +
