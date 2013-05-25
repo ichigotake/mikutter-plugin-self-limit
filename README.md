@@ -1,8 +1,8 @@
-# mikutter 自己規制プラグイン
+# NAME
 
-TwitterAPIの制限とは関係無しに独自の規制ルールを設定するmikutterプラグイン
+self\_limit - 自己規制プラグイン for mikutter
 
-## DESCRIPTION
+# DESCRIPTION
 
 TwitterのAPI規制の様に、自分の発言を規制するプラグインです
 
@@ -16,28 +16,28 @@ TwitterのAPI規制の様に、自分の発言を規制するプラグインで�
 Twitterに夢中になりすぎないようにするための「目安」としてご利用ください！
 
 
-## INSTALL
+# INSTALL
 
 プラグインディレクトリにダウンロード
 
     $ git clone git://github.com/ichigotake/mikutter-plugin-self-limit.git ~/.mikutter/plugin/self_limit
 
 
-## CONFIGURATION
+# CONFIGURATION
 
 起動した後に設定画面を開いて「自己規制」から各種設定ができます
 
 
-## ISSUES
+# ISSUES
 
 https://github.com/ichigotake/mikutter-plugin-self-limit/issues
 
-## SEE ALSO
+# SEE ALSO
 
 [mikutter](http://mikutter.hachune.net/)
 
 
-## AUTHOER
+# AUTHOER
 
 [@ichigotake](https://twitter.com/ichigotake)
 
