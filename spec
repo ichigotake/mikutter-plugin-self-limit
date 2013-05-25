@@ -5,5 +5,5 @@ depends:
   plugin: []
 version: '0.2'
 author: ichigotake
-name: 自己規制プラグイン
+name: 自主規制プラグイン
 description: TwitterAPIの制限とは関係無しに独自の規制ルールを設定するmikutterプラグイン
