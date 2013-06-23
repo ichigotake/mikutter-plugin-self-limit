@@ -40,3 +40,7 @@ https://github.com/ichigotake/mikutter-plugin-self-limit/issues
 
 {ichigotake}[https://twitter.com/ichigotake]
 
+== License
+
+{MIT LICENSE}[http://opensource.org/licenses/MIT]
+
