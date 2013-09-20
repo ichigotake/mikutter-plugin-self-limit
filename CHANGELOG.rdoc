@@ -1,4 +1,7 @@
 
+- v 0.4
+  - update: copyright
+
 - v 0.3
   - add: MIT LICENSE
   - update: document format to rdoc
